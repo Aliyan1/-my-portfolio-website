@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Sher Baz | Security Engineer</title>
+  <meta name="description" content="Security Engineer specialising in threat detection, incident response and cloud security on AWS and Azure.">
+  <meta property="og:title" content="Ali Sher Baz | Security Engineer">
+  <meta property="og:description" content="Threat detection, incident response and cloud security operations.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">Ali Sher Baz</a>
+    <nav aria-label="Main">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="role">Security Engineer, Threat Detection &amp; Incident Response</p>
+        <h1>I find attackers early and shut them down fast.</h1>
+        <p class="lead">I monitor multi-cloud environments on AWS and Azure, write the detection rules that catch advanced threats, and contain real incidents: DDoS, phishing and endpoint compromise. CEH certified, based in Lahore, Pakistan.</p>
+        <div class="actions">
+          <a class="btn primary" href="assets/Ali_Sher_Baz_CV.pdf" download>Download CV</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="rule" aria-label="Example Sigma detection rule">
+        <figcaption>
+          <span>process_injection.yml</span>
+          <small>Illustrative Sigma rule</small>
+        </figcaption>
+<pre><code><span class="k">title:</span> Suspicious Remote Process Access
+<span class="k">status:</span> example
+<span class="k">logsource:</span>
+  <span class="k">category:</span> process_access
+  <span class="k">product:</span> windows
+<span class="k">detection:</span>
+  <span class="k">selection:</span>
+    <span class="k">GrantedAccess|contains:</span> <span class="s">'0x1F3FFF'</span>
+  <span class="k">condition:</span> selection
+<span class="k">level:</span> <span class="a">high</span>
+<span class="k">tags:</span> [attack.defense_evasion, attack.t1055]</code></pre>
+      </figure>
+    </section>
+
+    <section class="band">
+      <div class="wrap stats">
+        <p><strong>2</strong> cloud platforms monitored<span>AWS and Azure</span></p>
+        <p><strong>3</strong> detection languages and tools<span>Sigma, YARA, Python</span></p>
+        <p><strong>CEH</strong> certified<span>EC-Council, July 2025</span></p>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap section">
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="job-head">
+          <div>
+            <h3>Security Engineer</h3>
+            <p>Ebryx, Lahore, Pakistan</p>
+          </div>
+          <span class="tag">Current</span>
+        </div>
+
+        <div class="groups">
+          <article>
+            <h4>Detect</h4>
+            <ul>
+              <li>Monitor and triage security events in real time across multi-cloud environments with AWS GuardDuty and Microsoft Sentinel.</li>
+              <li>Deployed and manage an ELK Stack SIEM for centralised log ingestion, correlation and alerting.</li>
+              <li>Write custom Sigma and YARA rules that catch advanced persistent threats and malware indicators.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Respond</h4>
+            <ul>
+              <li>Lead endpoint analysis and response with CrowdStrike Falcon (EDR) and VIPRE, containing and remediating compromised hosts.</li>
+              <li>Watch Cloudflare traffic to stop DDoS and web application attacks before they reach production.</li>
+              <li>Investigate phishing end to end: header analysis, sandboxed URL detonation and coordinated containment.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Automate and hunt</h4>
+            <ul>
+              <li>Built Python scripts for log parsing, alert triage and IOC enrichment, cutting repetitive analyst work.</li>
+              <li>Analyse Windows API behaviour and system events to spot process injection, privilege escalation and lateral movement.</li>
+              <li>Run structured threat hunts with senior analysts, mapped to the MITRE ATT&amp;CK framework.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap section">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>SIEM and detection</dt><dd>Elastic (ELK) Stack, Microsoft Sentinel, AWS GuardDuty, Sigma Rules</dd></div>
+        <div><dt>EDR and endpoint</dt><dd>CrowdStrike Falcon, VIPRE Endpoint Security, Windows API Analysis, Process Monitoring</dd></div>
+        <div><dt>Cloud security</dt><dd>Amazon Web Services (AWS), Microsoft Azure</dd></div>
+        <div><dt>Networking</dt><dd>TCP/IP, DNS, HTTP/S, Network Traffic Analysis</dd></div>
+        <div><dt>Threat and IR</dt><dd>Incident Response, Threat Detection, Phishing Analysis, Log Analysis</dd></div>
+        <div><dt>Vulnerability tools</dt><dd>Greenbone OpenVAS, Acunetix, Invicti</dd></div>
+        <div><dt>Programming</dt><dd>Python (SOC automation), SQL, Bash</dd></div>
+      </dl>
+    </section>
+
+    <section id="education" class="wrap section">
+      <h2>Education and certification</h2>
+      <ul class="timeline">
+        <li><time>July 2025</time><div><h3>Certified Ethical Hacker (CEH)</h3><p>EC-Council</p></div></li>
+        <li><time>June 2025</time><div><h3>BS, Computer Programming Engineering</h3><p>University of Engineering &amp; Technology (UET), Taxila</p></div></li>
+        <li><time>July 2020</time><div><h3>Intermediate, ICS</h3></div></li>
+      </ul>
+      <p class="interests">Currently most interested in security operations, cloud security, network security, threat intelligence, DevSecOps and incident response.</p>
+    </section>
+
+    <section id="contact" class="band dark">
+      <div class="wrap contact">
+        <h2>Let's talk security</h2>
+        <p>Open to security operations and cloud security roles. The quickest way to reach me is email.</p>
+        <a class="btn primary" href="mailto:aliyanaziz1rbk@gmail.com">aliyanaziz1rbk@gmail.com</a>
+        <!-- Add your profile links here, e.g.:
+        <a class="btn" href="https://www.linkedin.com/in/your-handle">LinkedIn</a>
+        <a class="btn" href="https://github.com/your-username">GitHub</a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>&copy; <span id="year">2026</span> Ali Sher Baz</p>
+    <p>Lahore, Pakistan</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
